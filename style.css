@@ -7,7 +7,6 @@
     font-style: normal;
     font-weight: normal;
 }
-
 @font-face {
     font-family: "ArialBold";
     src: url("fonts/Arial/ArialBold/ArialBold.eot");
@@ -30,17 +29,6 @@ body {
     font-family: "ArialRegular", sans-serif;
     font-style: normal;
     font-weight: normal;
-    font-family: "ArialBold", sans-serif;
-    font-style: normal;
-    font-weight: normal;
-    font-family: "ArialBoldItalic", sans-serif;
-    font-style: normal;
-    font-weight: normal;
-    font-family: 'Lato', sans-serif;
-    font-style: normal;
-    font-weight: normal;
-    font-weight: 700;
-    font-weight: 900;
 }
 .header1 {
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.07);
@@ -74,26 +62,55 @@ body {
     margin-top: 52px;
     margin-bottom: 54px;
 }
-.menu-last {
-    margin-right: 18px;
-}
 .nav-menu-name {
     text-decoration: none;
     color: #000000;
 }
-.nav-submenu {
+.menu3 {
+    display: inline-block;
+    vertical-align: top;
+    position: relative;
+    padding: 0px 10px 0px 12px;
+    margin-top: 47px;
+    margin-right: 35px;
+    border-top: 5px solid #e8ebf1;
+    margin-bottom: 0px;
+}
+.strelka::after {
+    content: '';
+    background-image: url('images/down_arrow.png');
+    background-repeat: no-repeat;
+    display: inline-block;
+    width: 7px;
+    height: 5px;
+    margin-left: 10px;
+}
+.menu-last {
+    margin-right: 18px;
+}
+.header-nav-submenu {
     display: none;
     position: absolute;
-    padding-left: 17px;
     left: 0px;
-    padding-top: 36px;
-    padding-bottom: 20px;
+    padding-top: 20px;
+    padding-bottom: 10px;
     z-index: 10;
 }
-.subname {
+.nav-submenu {
+    width: 187px;
+    margin: 0px 6px;
+    border-top: 1px solid #e7e7e7;
     text-transform: none;
+}
+.sub1 {
+    border-top: none;
+}
+.nav-submenu-name {
+    color: #000000;
     font-size: 13px;
     line-height: 36px;
+    text-decoration: none;
+    padding-left: 10px;
 }
 .head-logo {
     float: left;
@@ -106,24 +123,7 @@ body {
     clear: both;
     display: block;
 }
-.submenu {
-    display: block;
-    width: 154px;
-    margin-top: 0px;
-    margin-bottom: 0px;
-    border-top: 1px solid #e7e7e7;
-}
-.sub1 {
-    border-top: none;
-}
-.menu3 {
-    position: relative;
-    padding: 0px 27px 0px 12px;
-    margin-top: 47px;
-    margin-bottom: 36px;
-    border-top: 5px solid #e8ebf1;
-}
-.menu3:hover .nav-submenu {
+.menu3:hover .header-nav-submenu {
     display: block;
     background-color: #ffffff;
     border-bottom: 5px solid #2aacc8;
@@ -135,20 +135,8 @@ body {
 .menu3:hover .nav-menu-name {
     color: #2aacc8;
 }
-.menu3:hover .subname {
-    color: #000000;
-}
-.submenu:hover .subname {
+.nav-submenu:hover .nav-submenu-name {
     color: #2aacc8;
-}
-.strelka::after {
-    content: '';
-    background-image: url('images/down_arrow.png');
-    background-repeat: no-repeat;
-    display: inline-block;
-    width: 7px;
-    height: 5px;
-    margin-left: 10px;
 }
 .container {
     max-width: 1020px;
@@ -224,6 +212,10 @@ body {
     line-height: 20px;
     text-transform: uppercase;
 }
+.span-title {
+    display: inline-block;
+    vertical-align: middle;
+}
 .card-title::before {
     content: '';
     display: inline-block;
@@ -240,7 +232,6 @@ body {
     margin-top: 12px;
 }
 .card-text {
-    font-family: "ArialRegular", sans-serif;
     width: 216px;
     color: #363636;
     font-size: 13px;
@@ -249,7 +240,6 @@ body {
 .card-link {
     color: #2aacc8;
     text-decoration: none;
-    font-family: "ArialRegular", sans-serif;
 }
 .card-link::before {
     content: '';
@@ -366,7 +356,6 @@ body {
     color: #363636;
     font-size: 14px;
     line-height: 24px;
-    font-family: "ArialRegular", sans-serif;
 }
 .content-title {
     width: 425px;
@@ -428,12 +417,15 @@ body {
 .clients {
     margin-top: 19px;
 }
+.clients-img1 {
+    width: 479px;
+}
 .client-image {
     box-sizing: border-box;
     display: inline-block;
     vertical-align: top;
-    width: 160px;
-    height: 101px;
+    width: 158px;
+    height: 99px;
     box-shadow: inset 0 0 25px #e8ebf1;
     border: 1px solid #e8ebf1;
     background-color: #ffffff;
@@ -448,7 +440,6 @@ body {
 .text-load-text {
     width: 607px;
     color: #363636;
-    font-family: "ArialRegular", sans-serif;
     font-size: 16px;
     line-height: 26px;
 }
@@ -505,11 +496,9 @@ body {
     width: 233px;
     font-size: 14px;
     color: #363636;
-    font-family: "ArialRegular", sans-serif;
 }
 .list2-item {
     color: #363636;
-    font-family: "ArialRegular", sans-serif;
     font-size: 14px;
     line-height: 26px;
     text-decoration: none;
@@ -537,7 +526,6 @@ body {
 .list3-item {
     width: 104px;
     color: #363636;
-    font-family: "ArialRegular", sans-serif;
     font-size: 14px;
     line-height: 26px;
     text-decoration: none;
@@ -563,7 +551,6 @@ body {
 .list4-item {
     width: 135px;
     color: #363636;
-    font-family: "ArialRegular", sans-serif;
     font-size: 14px;
 }
 .it1 {
@@ -594,7 +581,6 @@ body {
 .left-side-text {
     width: 640px;
     color: #363636;
-    font-family: "ArialRegular", sans-serif;
     font-size: 13px;
     line-height: 18px;
     margin-top: 43px;
